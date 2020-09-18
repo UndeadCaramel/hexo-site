@@ -3,11 +3,12 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: cyberpunk
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: 
+    text: Big Eater Site
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: 
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
@@ -67,8 +68,6 @@ head:
         # Meta tag specified in <attribute>=<value> style
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
-    # URL or path to the website's RSS atom.xml
-    rss: 
 # Page top navigation bar configurations
 navbar:
     # Naviagtion menu items
@@ -80,22 +79,13 @@ navbar:
         About: /about
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
+        GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://github.com'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
-        Download on GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
 # Article related configurations
 article:
     # Code highlight settings
@@ -126,27 +116,25 @@ search:
     type: insight
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+# comment:
+#     type: disqus
+#     # Disqus shortname
+#     shortname: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
+    type: addtoany
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -156,11 +144,11 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: 大食
         # Author title
-        author_title: Your title
+        author_title: 吃吃吃吃吃~~
         # Author's current location
-        location: Your location
+        location: 银行系,太阳系,地球
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -168,24 +156,12 @@ widgets:
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        #follow_link: 'https://github.com/ppoffice'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/ppoffice'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
-            Dribbble:
-                icon: fab fa-dribbble
-                url: 'https://dribbble.com'
-            RSS:
-                icon: fas fa-rss
-                url: /
+                url: 'https://github.com/UndeadCaramel'
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -209,7 +185,7 @@ widgets:
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
@@ -220,31 +196,31 @@ plugins:
     back_to_top: true
     # Baidu Analytics plugin settings
     # https://tongji.baidu.com
-    baidu_analytics:
-        # Baidu Analytics tracking ID
-        tracking_id: 
+    # baidu_analytics:
+    #     # Baidu Analytics tracking ID
+    #     tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
+    # busuanzi: false
     # CNZZ statistics
     # https://www.umeng.com/web
-    cnzz:
-        # CNZZ tracker id
-        id: 
-        # CNZZ website id
-        web_id: 
+    # cnzz:
+    #     # CNZZ tracker id
+    #     id: 
+    #     # CNZZ website id
+    #     web_id: 
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
     # Google Analytics plugin settings
     # https://analytics.google.com
-    google_analytics:
-        # Google Analytics tracking ID
-        tracking_id: 
+    # google_analytics:
+    #     # Google Analytics tracking ID
+    #     tracking_id: 
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
-    hotjar:
-        # Hotjar site id
-        site_id: 
+    # hotjar:
+    #     # Hotjar site id
+    #     site_id: 
     # Enable the KaTeX math typesetting supprot
     # https://katex.org/
     katex: false
