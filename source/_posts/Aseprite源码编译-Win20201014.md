@@ -1,13 +1,15 @@
 ---
 title: Aseprite源码编译-Win
 tags:
-- 软件
-- 像素画
-- Aseprite
-- win
-categories: 
-- 软件编译
+  - 软件
+  - 像素画
+  - Aseprite
+  - win
+categories:
+  - 软件编译
+date: 2020-10-14 11:25:11
 ---
+
 
 ## 介绍
 
