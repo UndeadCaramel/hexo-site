@@ -3,7 +3,7 @@ title: Linux常用命令
 tags:
 - Linux
 categories: 
-- Linux
+- 系统功能
 ---
 
 ###### 查看端口使用情况
