@@ -35,8 +35,8 @@ Aseprite 是一款十分受欢迎的专业像素动画及像素艺术创作软�
 * ninja 需要将安装路径添加至环境变量PATH,也可在Cmake添加环境变量后放入Cmake的bin目录下
 * Visual Studio Community 安装时选择 "Workloads" 中的 "Desktop development with C++",之后在"Individual components" 中选择最新 "Windows 10 SDK" (经测试,即使在win7中选择此项同样可以成功安装Aseprite)
 
-![工作负载(Workloads)](../Aseprite源码编译-Win/imgs/Workloads20200921141524.png)
-![单个组件(Individual components)](../Aseprite源码编译-Win/imgs/Individual_components20200921141741.png)
+![工作负载(Workloads)](./Aseprite源码编译-Win20201014/imgs/Workloads20200921141524.png)
+![单个组件(Individual components)](./Aseprite源码编译-Win20201014/imgs/Individual_components20200921141741.png)
 
 ### 编译
 
@@ -62,17 +62,17 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLAF_BACKEND=skia -DSKIA_DIR={Skia asep
 #ninja构建软件,会出现很多 failed / not found / warning 只要不出现error,并不影响编译结果
 ninja aseprite
 ```
-![编译完成后的build/bin目录](../Aseprite源码编译-Win/imgs/compiler_result20200921144949.png)
+![编译完成后的build/bin目录](./Aseprite源码编译-Win20201014/imgs/compiler_result20200921144949.png)
 
 ### 编译收尾
 Aseprite运行只需要build/bin目录下的data目录及aseprite.exe,可以单独将它们拷出后删除所有相关编译工具.
-![Aseprite](../Aseprite源码编译-Win/imgs/Aseprite20200921150324.png)
+![Aseprite](./Aseprite源码编译-Win20201014/imgs/Aseprite20200921150324.png)
 
 ## 汉化
 1. 在[Aseprite汉化文件](https://github.com/J-11/Aseprite-Simplified-Chinese)下载下来的文件为hanhua-1.2.23.aseprite-extension,是Aseprite的扩展文件
 2. 打开Aseprite,选择Edit-preferences,之后再左侧项目中选择Extensions,在右侧选择Add Extension,找到下载的汉化文件,选中点击OK会自动进行安装,安装完成后在右侧会增加最新一条Languages Simple Chinese,此时表示插件安装成功
-![preference-extensions界面](../Aseprite源码编译-Win/imgs/Aseprite_Extension20200921151346.png)
+![preference-extensions界面](./Aseprite源码编译-Win20201014/imgs/Aseprite_Extension20200921151346.png)
 3. 接下来选中左侧General,在右侧language中选择sChinese,点击ok或者apply即可完成汉化操作.点击apply后preference并不会即时更新汉化,但此时菜单栏及其他部分已汉化,需重新打开窗口后才能生效.
-![preference-General界面](../Aseprite源码编译-Win/imgs/Aseprite_General20200921151346.png)
+![preference-General界面](./Aseprite源码编译-Win20201014/imgs/Aseprite_General20200921151346.png)
 4. 汉化后效果
-![Aseprite汉化后界面](../Aseprite源码编译-Win/imgs/Aseprite_Chinese20200921153025.png)
+![Aseprite汉化后界面](./Aseprite源码编译-Win20201014/imgs/Aseprite_Chinese20200921153025.png)
